@@ -10,6 +10,15 @@
         <br>
         <h1>Welcome to the Student Management System <br></h1>
         <h1>This is the local template from Student app in django</h1>
+        <br>
+        <h2>Student name: {{ name }}</h2>
+        <h2>Student age: {{ age }}</h2>
+        <h2>Student major: {{ major }}</h2>
+        {% if age > 18 %}
+            <h3>The student is an adult.</h3>
+        {% else %}
+            <h3>The student is a minor.</h3>
+        {% endif %}
     </center>
 </body>
 </html>
